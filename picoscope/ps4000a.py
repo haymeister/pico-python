@@ -69,7 +69,7 @@ class PS4000a(_PicoscopeBase):
     LIBNAME = "ps4000a"
 
     NUM_CHANNELS = 8
-    CHANNELS = dict(zip(string.uppercase[0:NUM_CHANNELS], xrange(NUM_CHANNELS)))
+    CHANNELS = dict(zip(string.ascii_uppercase[0:NUM_CHANNELS], range(NUM_CHANNELS)))
 
     CHANNEL_RANGE = [
                    {"rangeV": 10E-3, "apivalue": 0, "rangeStr": "10 mV"},
